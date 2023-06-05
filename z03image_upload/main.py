@@ -18,7 +18,7 @@ class Maincode(QMainWindow, ui_registration.Ui_MainWindow):
         self.mix_pushButton.clicked.connect(self.on_open_infr)
         self.CNN_registration.clicked.connect(self.cnngetresult)
 
-    #img_flu = np.empty((1, 80, 80, 3))
+    # img_flu = np.empty((1, 80, 80, 3))
 
     def on_open_vis(self):  # 槽函数编写
         imgName, imgType = QFileDialog.getOpenFileName(self, "打开图片flu", "", "*.jpg;;*.png;;All Files(*)")
